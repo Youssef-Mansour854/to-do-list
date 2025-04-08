@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+  
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+}
+  
+h1 {
+    text-align: center;
+    color: #2d87f0;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+  
+#taskInput {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #2d87f0;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+}
+  
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d87f0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #1f66c1;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    background-color: #f9f9f9;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+  
+li.completed {
+    text-decoration: line-through;
+    color: #b0bec5;
+}
+  
+button.delete-btn,
+button.edit-btn {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+  
+button.edit-btn {
+    background-color: #ffa000;
+}
+  
+button.delete-btn:hover,
+button.edit-btn:hover {
+    opacity: 0.8;
+}
+  
